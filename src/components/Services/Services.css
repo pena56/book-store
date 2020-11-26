@@ -1,0 +1,39 @@
+.services {
+  width: 100%;
+  padding: 50px 0;
+}
+
+.services__list {
+  display: flex;
+  /* padding: 0 30px; */
+  color: #ee434c;
+  justify-content: center;
+}
+
+.service__item {
+  margin: 10px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service__item-header {
+  color: black;
+  margin-top: 15px;
+}
+
+.service__item-desc {
+  color: black;
+}
+
+@media screen and (max-width: 800px) {
+  .services__list {
+    flex-wrap: wrap;
+  }
+
+  .service__item {
+    width: 50%;
+    margin: 30px 0;
+    text-align: center;
+  }
+}

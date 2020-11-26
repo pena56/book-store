@@ -1,0 +1,29 @@
+.category {
+  display: flex;
+  width: 100%;
+  margin: 10px;
+}
+
+.category:hover {
+  cursor: pointer;
+}
+
+.category__name {
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.category__number {
+  font-size: 0.6rem;
+  color: #757575;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 800px) {
+  .category {
+    width: fit-content;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+  }
+}

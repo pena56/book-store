@@ -1,0 +1,168 @@
+.header {
+  display: flex;
+  width: 100vw;
+  height: 80px;
+  box-sizing: border-box;
+  padding-left: 100px;
+  padding-right: 100px;
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.header__brand {
+  width: 20%;
+  margin: auto;
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+a > span {
+  color: #ee434c;
+}
+
+.header__links {
+  width: 60%;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  /* box-sizing: border-box; */
+}
+
+.header__link {
+  margin: 0 10px;
+  font-weight: 500;
+  /* box-sizing: border-box; */
+}
+
+.header__link:hover {
+  border-bottom: 2px solid #ee434c;
+}
+
+.active {
+  border-bottom: 2px solid #ee434c;
+}
+
+.header__actions {
+  width: 40%;
+  display: flex;
+  margin: auto;
+  justify-content: flex-end;
+  color: #ee434c;
+  font-weight: 500;
+}
+
+.header__actions-signin {
+  margin: 0 20px;
+}
+
+.header__menu-icon {
+  margin: auto;
+  position: absolute;
+  right: -200%;
+  display: none;
+}
+
+.header__actions-count {
+  color: white;
+  background: #ee434c;
+  padding: 4px 8px;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+.sideDrawer {
+  height: 100vh;
+  width: 60%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  background: rgb(223, 199, 199);
+  z-index: 100;
+  justify-content: center;
+  font-size: 1.3rem;
+  transition: all 0.5s ease-out;
+  z-index: 300;
+}
+
+.sideDrawer__open {
+  right: 0;
+}
+
+.sideDrawer__close {
+  right: -200%;
+}
+
+.sideDrawer__icon-close {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.sideDrawer__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.sideDrawer__link {
+  margin: 5px 0;
+}
+
+.sideDrawer__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ee434c;
+}
+
+.sideDrawer__actions-signin {
+  margin: 5px 0;
+}
+
+@media screen and (max-width: 800px) {
+  .header {
+    padding: 5px;
+  }
+
+  .header__links {
+    display: none;
+  }
+
+  .header__menu-icon {
+    right: 5%;
+    top: 27px;
+  }
+
+  .sideDrawer__actions {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    padding: 0;
+  }
+  .header__links {
+    display: none;
+  }
+
+  .header__actions {
+    display: none;
+  }
+
+  .header__brand {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .sideDrawer__actions {
+    display: flex;
+  }
+}

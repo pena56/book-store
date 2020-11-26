@@ -1,0 +1,63 @@
+.book {
+  width: 100%;
+  display: flex;
+  margin: 20px 0;
+}
+
+.book__cover {
+  width: 30%;
+  height: auto;
+}
+
+.book__cover > img {
+  width: 200px;
+  height: 300px;
+  object-fit: contain;
+}
+
+.book__details {
+  width: 70%;
+  padding: 10px;
+}
+
+.book__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.book__author,
+.book__desc {
+  font-size: 0.9rem;
+  color: #757575;
+  font-weight: 500;
+  margin: 5px 0;
+}
+
+.book__price {
+  font-weight: 700;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.book__price > span {
+  margin-left: 20px;
+}
+
+.book__button {
+  margin-top: 30px;
+  border: 1px solid black;
+  background: none;
+  padding: 10px 35px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.book__actions {
+  display: flex;
+  width: 100%;
+}
+
+.bookmark {
+  margin-left: auto;
+  margin-top: auto;
+}
